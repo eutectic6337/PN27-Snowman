@@ -41,7 +41,7 @@ resistor
 capacitor
 integrated circuit
 
-# how to plagiarize^W embrace-and-extend existing designs
+# how to ~~plagiarize~~ embrace-and-extend existing designs
 github
 - just build somebody else's design
 - use existing schematic, tweak the board
