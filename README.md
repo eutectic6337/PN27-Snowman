@@ -21,24 +21,32 @@ During this session we will walk through the necessary steps to design and build
 
 # form factors (badge vs SAO)
 badge: self-contained, including power source and mounting (lanyard/pin)
+
 SAO: plugs in to a badge to get power and support, and/or add functionality
 
 # PCB art constraints (limited layers vs full-color)
 broke: presence-or-absence of copper, soldermask, silkscreen on one or both sides, plus front- and back-lighting
+
 woke: full-color UV-cured ink printing
 
 # simple sample circuits
 glow: optional switch, current-limiting resistor, LED
+
 blink: 555 timer, timing components, brightness components, LED(s)
+
 programmable: microcontroller+support, LED(s), firmware
 
 # types of component (what they do, what they look like, what their limitations are)
 through-hole
+
 surface-mount
 
 LED
+
 resistor
+
 capacitor
+
 integrated circuit
 
 # how to ~~plagiarize~~ embrace-and-extend existing designs
@@ -50,14 +58,25 @@ github
 
 # software tools (local vs online)
 KiCad
+
 EasyEDA
 
 # suppliers
-AliExpress
-JLCPCB
-LCSC
-OSHpark
-DigiKey
+[AliExpress](aliexpress.com)
+
+[JLCPCB](jlcpcb.com)
+
+[LCSC](lcsc.com)
+
+[OSHpark](oshpark.com)
+
+[DigiKey](digikey.com)
+
+[Macrofab](macrofab.com/platform)
+
+[SVTronics](svtronics.com)
+
+[ExPlus](explus.com.tw/products.htm)
 
 # just how much $ does it cost?
 - TN badge: 60 of, hand assembled $30 ea
