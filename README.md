@@ -78,6 +78,8 @@ EasyEDA
 
 [ExPlus](explus.com.tw/products.htm)
 
+[UtiMachine](ultimachine.com/pages/electronics-manufacturing-services)
+
 # just how much $ does it cost?
 - TN badge: 60 of, hand assembled $30 ea
 - challenge coin: 200 of, somewhat machine assembled $2 ea
