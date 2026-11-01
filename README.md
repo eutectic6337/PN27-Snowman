@@ -1,5 +1,6 @@
 # Do you Want to Build a ~~Snowman~~ Blinky Badge?
 mlp @ [615 Labs](615-labs.com)
+![Plan 9 bunny](i/plan9bunny.jpg)
 
 PhreakNIC 27
 
@@ -11,7 +12,7 @@ CC BY-NC-SA 4.0[^1]
 - etched simple circuit boards
 - got an EE degree
 - got a job fixing the software side of PCs
-- moved to the States in 2016
+- moved Over Here in 2016
 - went to DEF CON in 2017, found his people
 - designed a badge and got hooked again
 
@@ -42,21 +43,40 @@ During this session we will walk through the necessary steps to design and build
 # form factors (badge vs SAO)
 badge: self-contained, including power source and mounting (lanyard/pin)
 
+![DEF CON badge front](i/defcon-badge-front.jpg)
+![DEF CON badge back](i/defcon-badge-back.jpg)
+
 SAO: plugs in to a badge to get power and support, and/or add functionality
+
+![SAOs front](i/saos-front.jpg)
+![SAOs back](i/saos-back.jpg)
 
 ---
 # PCB art constraints (limited layers vs full-color)
 broke: presence-or-absence of copper, soldermask, silkscreen on one or both sides, plus front- and back-lighting
 
+(for example, Keanu above)
+
 woke: full-color UV-cured ink printing
+
+![sample full-color PCB](i/full-color-tester.jpg)
+
 
 ---
 # simple sample circuits
 glow: optional switch, current-limiting resistor, LED
 
+![glow-only circuit](i/star-glow.jpg)
+
 blink: 555 timer, timing components, brightness components, LED(s)
 
+![blink circuit](i/workshop-blinker.mp4)
+<video><source src="https://github.com/eutectic6337/PN27-Snowman/raw/refs/heads/main/i/workshop-blinker.mp4"></video>
+
 programmable: microcontroller+support, LED(s), firmware
+
+![programmable](i/flask-sao.mp4)
+<video><source src="https://github.com/eutectic6337/PN27-Snowman/raw/refs/heads/main/i/flask-sao.mp4"></video>
 
 ---
 # types of component (what they do, what they look like, what their limitations are)
