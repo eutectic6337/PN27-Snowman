@@ -66,31 +66,55 @@ woke: full-color UV-cured ink printing
 # simple sample circuits
 glow: optional switch, current-limiting resistor, LED
 
-![glow-only circuit](i/star-glow.jpg)
+![glow-only circuit](i/PN26-workshop.jpg)
 
 blink: 555 timer, timing components, brightness components, LED(s)
 
-![blink circuit](i/workshop-blinker.mp4)
-<video><source src="https://github.com/eutectic6337/PN27-Snowman/raw/refs/heads/main/i/workshop-blinker.mp4"></video>
+![blink circuit](i/workshop-blinker.jpg)
+<video><source src="https://mlp.sarce.net/workshop-blinker.mp4"></video>
 
 programmable: microcontroller+support, LED(s), firmware
 
-![programmable](i/flask-sao.mp4)
-<video><source src="https://github.com/eutectic6337/PN27-Snowman/raw/refs/heads/main/i/flask-sao.mp4"></video>
+![programmable](i/flask-sao.jpg)
+<video><source src="https://mlp.sarce.net/flask-sao.mp4"></video>
 
 ---
 # types of component (what they do, what they look like, what their limitations are)
-through-hole
 
-surface-mount
+## through-hole (THT)
 
-LED
+- electrical contacts are wires that go *through* holes in circuit board
+- larger, easier for eyes to see and fingers to manipulate
+- ![LEDs](i/THT-LEDs-mounted.jpg) ![resistors](i/THT-res-mounted.jpg)
 
-resistor
+## surface-mount (SMD)
 
-capacitor
+- electrical contacts are flat metal pads that sit against surface of circuit board
+- smaller, more difficult for humans but easier for machines
 
-integrated circuit
+## Light Emitting Diode (LED)
+
+- convert electric current into light
+- ![THT LEDs](i/THT-LEDs.jpg) ![SMD LEDs](i/SMD-LEDs.jpg)
+- connect wrong way: no go
+- too much juice: becomes Smoke Emitting Diode, then Dark Emitting Diode
+
+## resistor
+
+- convert electric current into heat and potential-drop (Ohm's Law)
+- ![THT resistors](i/THT-res.jpg) ![SMD resistors](i/SMD-res.jpg)
+- too much juice: will emit light and smoke, once
+
+## capacitor
+
+- store and release electric charge
+- ![THT capacitors](i/THT-caps.jpg) ![SMD capacitors](i/SMD-caps.jpg)
+
+## integrated circuit "chip"
+
+- combines many functions into one package, thus "integrated"
+- ![THT chips](i/THT-chips.jpg) ![SMD chips](i/SMD-chips.jpg)
+- same limitations as LED only more so
 
 ---
 # how to ~~plagiarize~~ embrace-and-extend existing designs
