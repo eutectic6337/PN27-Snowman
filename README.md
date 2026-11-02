@@ -75,19 +75,20 @@ blink: 555 timer, timing components, brightness components, LED(s)
 
 programmable: microcontroller+support, LED(s), firmware
 
-![programmable](i/flask-sao.jpg)
+<a name="flask-SAO"></a>![programmable](i/flask-sao.jpg)
 <video><source src="https://mlp.sarce.net/flask-sao.mp4"></video>
 
 ---
 # types of component (what they do, what they look like, what their limitations are)
 
-## through-hole (THT)
+## [through-hole (THT)](https://en.wikipedia.org/wiki/Through-hole_technology)
 
 - electrical contacts are wires that go *through* holes in circuit board
 - larger, easier for eyes to see and fingers to manipulate
-- ![LEDs](i/THT-LEDs-mounted.jpg) ![resistors](i/THT-res-mounted.jpg)
+- ![LEDs](i/THT-LEDs-mounted.jpg)
+- ![resistors](i/THT-res-mounted.jpg)
 
-## surface-mount (SMD)
+## [surface-mount (SMT)](https://en.wikipedia.org/wiki/Surface-mount_technology)
 
 - electrical contacts are flat metal pads that sit against surface of circuit board
 - smaller, more difficult for humans but easier for machines
@@ -95,34 +96,54 @@ programmable: microcontroller+support, LED(s), firmware
 ## Light Emitting Diode (LED)
 
 - convert electric current into light
-- ![THT LEDs](i/THT-LEDs.jpg) ![SMD LEDs](i/SMD-LEDs.jpg)
+- ![THT LEDs](i/THT-LEDs.jpg)
+- ![SMD LEDs](i/SMD-LEDs.jpg)
 - connect wrong way: no go
 - too much juice: becomes Smoke Emitting Diode, then Dark Emitting Diode
 
 ## resistor
 
 - convert electric current into heat and potential-drop (Ohm's Law)
-- ![THT resistors](i/THT-res.jpg) ![SMD resistors](i/SMD-res.jpg)
+- ![THT resistors](i/THT-res.jpg)
+- ![SMD resistors](https://upload.wikimedia.org/wikipedia/commons/e/ec/RC2010JK-071K2L.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original)
+By 01x07x2022000 - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=121209738
 - too much juice: will emit light and smoke, once
 
 ## capacitor
 
 - store and release electric charge
-- ![THT capacitors](i/THT-caps.jpg) ![SMD capacitors](i/SMD-caps.jpg)
+- ![THT capacitors](https://pcbwayfile.s3.us-west-2.amazonaws.com/web/23/06/27/1627577812633t.jpg) PCBWay
+- ![SMD capacitors](https://www.bestpcbs.com/blog/wp-content/uploads/2026/06/smd-capacitor%E2%80%8B-3-1024x768.jpg) EBest Circuit
 
 ## integrated circuit "chip"
 
 - combines many functions into one package, thus "integrated"
-- ![THT chips](i/THT-chips.jpg) ![SMD chips](i/SMD-chips.jpg)
+- ![THT chips](https://upload.wikimedia.org/wikipedia/commons/8/80/Three_IC_circuit_chips.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original)
+By [Kimmo Palosaari](http://openphoto.net/user/profile.html?id=5757) - [OpenPhoto.net](http://openphoto.net/gallery/image.html?image_id=9673),
+Public Domain, [Link](https://commons.wikimedia.org/w/index.php?curid=670348)
+- ![SMD chips](https://upload.wikimedia.org/wikipedia/commons/3/38/TSSOP_RQFP_SO_SSOP_QFN.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original)
+By I, NobbiP, CC BY-SA 3.0, [Link](https://commons.wikimedia.org/w/index.php?curid=1148101)
 - same limitations as LED only more so
 
 ---
 # how to ~~plagiarize~~ embrace-and-extend existing designs
 github, Hackaday, etc.
-- just build somebody else's design
+- just build Somebody Else's Design
+  - minimal effort option
+  - constrained by Somebody Else's Idea, circuit, board, and your own assembly skills 
 - use existing schematic, tweak the board
+  - e.g. change the silkscreen/art and maybe relocate some LEDs
+  - don't need to understand the circuit much at all
+  - a gentle introduction to PCB CAD program
 - use existing schematic, roll your own board
+  - a blank slate for the PCB, but keep the same circuit function
+  - probably don't need to understand the circuit in depth
 - tweak schematic, tweak-or-respin board
+  - e.g. duplicate part of the design (double the blinking LEDs, for instance)
+  - might still get away with minimal circuit knowledge
+  - it's actually how we made the [flask SAO](#flask-SAO) starting from our [challenge coin](https://github.com/eutectic6337/coin1)
+  by replacing the battery connection with a 6-pin SAO connector, and dropping the second 8 LEDs
+  (and, simplifying the final assembly enormously)
 
 ---
 # software tools (local vs online)
