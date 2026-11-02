@@ -124,6 +124,7 @@ Public Domain, [Link](https://commons.wikimedia.org/w/index.php?curid=670348)
 - ![SMD chips](https://upload.wikimedia.org/wikipedia/commons/3/38/TSSOP_RQFP_SO_SSOP_QFN.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original)
 By I, NobbiP, CC BY-SA 3.0, [Link](https://commons.wikimedia.org/w/index.php?curid=1148101)
 - same limitations as LED only more so
+- e.g. microcontroller can have arbitrarily-complex behaviour
 
 ---
 # how to ~~plagiarize~~ embrace-and-extend existing designs
@@ -146,10 +147,26 @@ github, Hackaday, etc.
   (and, simplifying the final assembly enormously)
 
 ---
-# software tools (local vs online)
-KiCad
+# software tools (local vs online, commercial vs free)
+- Altium
+  - commercial tool - much bucks
+  - used to be Protel
 
-EasyEDA
+- Eagle
+  - free-as-in-beer tool
+  - came under AutoDesk's umbrella years ago
+  - now End-of-Life
+
+- KiCad
+  - open-source app very similar in operation to Protel Schematic/AutoTrax from 35 years ago
+  - runs entirely local
+  - has many plugins available, and a Python scripting interface
+
+- EasyEDA
+  - online tool by Chinese PCB manufacturer JLCPCB (and has a local/desktop version)
+  - very similar in operation to KiCad
+  - only way to use JLCPCB's full-color printing-on-PCB service
+  - powerful import/export facility allows interoperation with other tools (e.g. KiCad, Altium)
 
 ---
 # suppliers
@@ -174,9 +191,9 @@ EasyEDA
 ---
 # just how much $ does it cost?
 Actual case studies:
-- TN badge: 60 of, hand assembled $30 ea
-- challenge coin: 200 of, somewhat machine assembled $2 ea
-- flask SAO: 200 of, almost all machine assembled $0.90 ea
+- [TN badge](https://github.com/eutectic6337/TNbadge): 60 of, hand assembled $30 ea
+- [challenge coin](https://github.com/eutectic6337/coin1): 200 of, somewhat machine assembled $2 ea
+- [flask SAO](https://github.com/eutectic6337/615-labs-SAO): 200 of, almost all machine assembled $0.90 ea
 
 ---
 https://github.com/eutectic6337/PN27-Snowman
