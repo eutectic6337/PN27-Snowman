@@ -1,6 +1,6 @@
 # Do you Want to Build a ~~Snowman~~ Blinky Badge?
 mlp @ [615 Labs](615-labs.com)
-![Plan 9 bunny](i/plan9bunny.jpg)
+![Plan 9 bunny](i/plan9bunny.jpg)![QR code to this repo](i/qrcode.png)
 
 PhreakNIC 27
 
